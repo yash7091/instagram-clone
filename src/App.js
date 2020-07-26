@@ -179,7 +179,10 @@ function App() {
                 </div>
                 
                 <div className="app__postsRight">
-                <InstagramEmbed
+                  {
+                    (Screen.width>1000)&&
+                    (
+                      <InstagramEmbed
                       url='https://instagr.am/p/Zw9o4/'
                       maxWidth={320}
                       hideCaption={false}
@@ -191,6 +194,8 @@ function App() {
                       onAfterRender={() => {}}
                       onFailure={() => {}}
                 />
+                    )
+                  }
 
 
                 </div>
